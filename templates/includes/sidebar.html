@@ -18,33 +18,24 @@
             
             {% if PHONE %}
             <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{PHONE}}">{{PHONE}}</a></li>
-            {% else %}
-            <li class="phone"><i class="fa fa-phone"></i><a href="tel:012 345 6789">012 345 6789</a></li>
             {% endif %}
             
             {% if WEBSITE %}
             <li class="website"><i class="fa fa-globe"></i><a href="http://{{WEBSITE}}" target="_blank">{{WEBSITE}}</a></li>
-            {% else %}
-            <li class="website"><i class="fa fa-globe"></i><a href="http://blog.webjeda.com" target="_blank">blog.webjeda.com</a></li>
             {% endif %}
             
             {% if LINKEDIN %}
-            <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{LINKEDIN}}" target="_blank">linkedin.com/in/{{LINKEDIN}}</a></li>
-            {% else %}
-            <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/sharath-kumar-87669956" target="_blank">linkedin.com/in/sharathdt</a></li>
+            <li class="linkedin"><i class="fa fa-linkedin"></i><a href="http://linkedin.com/in/{{LINKEDIN}}" target="_blank">{{LINKEDIN}}</a></li>
             {% endif %}
             
             {% if GITHUB %}
-            <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{GITHUB}}" target="_blank">github.com/{{GITHUB}}</a></li>
-            {% else %}
-            <li class="github"><i class="fa fa-github"></i><a href="http://github.com/sharu725" target="_blank">github.com/sharu725</a></li>
+            <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{GITHUB}}" target="_blank">{{GITHUB}}</a></li>
             {% endif %}
-            
-            {% if TWITTER %}
-            <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{TWITTER}}" target="_blank">{{TWITTER}}</a></li>
-            {% else %}
-             <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/@webjeda" target="_blank">@webjeda</a></li>
+
+            {% if PDF %}
+            <li class="pdf"><i class="fa fa-file"></i><a href="{{PDF}}" target="_blank">Resume PDF</a></li>
             {% endif %}
+          
             
         </ul>
     </div><!--//contact-container-->
