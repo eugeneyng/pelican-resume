@@ -3,7 +3,9 @@
 	<h2 class="container-block-title">Interests</h2>
 	<ul class="list-unstyled interests-list">
 		{% for interest in INTERESTS %}
-		   <li>{{ interest }}</li>
+    <li>
+		   <a href={{ interest['link'] }}>{{interest['item']}}</a>
+    </li>
 		{% endfor %}
 	</ul>
 </div><!--//interests-->
